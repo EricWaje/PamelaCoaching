@@ -54,6 +54,8 @@ html{
 
 .titulo{
     font-family: 'Alata', sans-serif;
+    margin-top: 4em;
+    margin-bottom: 2em;
 }
 
 /* TIPOGRFIA ROBOTO SOLO PARA EL MENU DE NAVEGACION */
@@ -63,13 +65,30 @@ html{
     font-weight: 400;
 }
 
+.athitiRegular{
+    font-family: 'Athiti', sans-serif;
+    font-weight: 400;
+}
+
+.athitiLight{
+    font-family: 'Athiti', sans-serif;
+    font-weight: 300;
+}
+
+.baskerville{
+    font-family: 'Baskervville', serif;
+    font-weight: 400;
+}
+
 /* NAVBAR */
 .barra{
+    z-index: 100;
     padding: 10px 10px;
     width: 100%;
     position: fixed;
     top: 0px;
     box-shadow: 0px 0px 5px 2px rgba(121, 121, 121, 0.269);
+    background-color: white;
 }
 
 nav .enlaceLogo img{
@@ -91,16 +110,231 @@ nav #navbarSupportedContent ul li .nav-link{
 /* SERVICIOS */
 
 /* METODOLOGIA */
+#metodologia{
+    background-color: #FAFBF3;
+    margin-top: 10em;
+    /* margin-bottom: 10em; */
+}
+
+#metodologia h2{
+    color:#722F72 ;
+}
+
+
+.contenedorMetodologia{
+    background-color: rgba(196, 167, 196, 0.5);
+    box-shadow: 8px 8px 19px rgba(90, 96, 62, 0.25);
+    border-radius: 25px 0px;
+}
+
+.parrafoMetodologia{
+    font-size: 20px;
+    line-height: 40px;
+    font-style: italic;
+    padding: 30px 112px;
+}
+
+.contenedorParrafo{
+    line-height: 35px;
+    margin: 0px 40px;
+}
 
 /* TESTIMONIOS */
+#testimonios{
+    background-color: #C2CA9A;
+    box-shadow: inset 0px 1px 6px 0px #5a603e62;
+}
+
+#testimonios h2{
+    color:white ;
+}
+
+.contenedorImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.contenedorImg img{
+    width: 200px;
+}
+
+.contenedorParrafoTestimonios{
+    background-color: #F4F7E4;
+    border-radius: 25px 0px;
+    margin-bottom: 30px;
+}
+
+.contenedorParrafoTestimonios p{
+    padding: 10px 20px;
+    margin: 0px 0px;
+    font-size: 17px;
+    box-shadow: 8px 8px 19px rgba(90, 96, 62, 0.25);
+    border-radius: 25px 0px;
+}
+
+.filaTestUno{
+    margin-right: 200px;
+}
+
+.filaTestDos{
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+
+.filaTestTres{
+    margin-right: 200px;
+}
 
 /* CONTACTO */
+#contacto{
+    background-color: #722F72;
+}
+
+#contacto h2{
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input{
+    margin: 10px 0px;
+    border-radius: 24px;
+    padding: 10px 12px;
+    border: none;
+    font-size: 15px;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+textarea{
+    border: none;
+    padding: 10px 12px;
+    border-radius: 24px;
+    resize: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.contenedorBoton{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.boton{
+    border-radius: 24px;
+    width: 30%;
+    background-color: #AF86AF;
+    color: white;
+}
+
+.contenedorInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contenedorInfo p{
+    color: white;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+.contenedorLogo{
+    border-radius: 100%;
+    background-color: #C4A7C4;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.contenedorLogo i{
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.contenedorLogo i:hover{
+    font-size: 20px;
+    color: #722F72;
+}
+
 
 /* MEDIA QUERIES TABLET */
 @media only screen and (max-width: 768px){
     nav .enlaceLogo img{
         width: 140px;
         margin-left: 0px;
+    }
+
+    .parrafoMetodologia{
+        line-height: 35px;
+        padding: 20px 12px;
+    }
+
+    .contenedorParrafo{
+        line-height: 35px;
+        margin: 30px 20px;
+    }
+
+    .contenedorImg img{
+        width: 150px;
+    }
+
+    .contenedorParrafoTestimonios{
+        margin-top: 20px;
+    }
+
+    .filaTestUno{
+        margin-right: 0px;
+    }
+    
+    .filaTestDos{
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .filaTestTres{
+        margin-right: 0px;
+    }
+
+    .boton{
+        width: 45%;
     }
 
 }
