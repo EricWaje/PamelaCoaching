@@ -125,16 +125,6 @@ nav .navbar-toggler:focus{
 
 }
 
-#barraUno.active{
-    width: 30px;
-    height: 2px;
-    background-color: #722F72;
-    margin: 8px 0px;
-    border: none;
-    rotate: 45deg;
-
-}
-
 #barraDos{
     width: 30px;
     height: 2px;
