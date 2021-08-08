@@ -16,10 +16,11 @@ const modificarMenu = () => {
   const uno = document.getElementById('barraUno');
   const dos = document.getElementById('barraDos');
   const tres = document.getElementById('barraTres');
+
   if (dos.style.opacity !== '0') {
-    uno.style.transform = 'translateY(10px) rotate(135deg)';
+    uno.style.transform = 'translateY(10px) rotate(45deg)';
     uno.style.transition = 'all 0.2s ease-in-out';
-    tres.style.transform = 'translateY(-10px) rotate(45deg)';
+    tres.style.transform = 'translateY(-10px) rotate(135deg)';
     tres.style.transition = 'all 0.2s ease-in-out';
     dos.style.opacity = '0';
     dos.style.transition = 'all 0.2s ease-in-out';
