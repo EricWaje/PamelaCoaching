@@ -99,21 +99,147 @@ nav .enlaceLogo img{
 nav #navbarSupportedContent ul li .nav-link{
     color: rgb(0, 0, 0);
     margin: 0px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+nav #navbarSupportedContent ul li .nav-link:hover{
+    color: #722F72;
+    margin: 0px 10px;
+}
+
+nav .navbar-toggler{
+    border: none;
+}
+
+nav .navbar-toggler:focus{
+    border: none;
+    outline: none;
+}
+
+#barraUno{
+    width: 30px;
+    height: 2px;
+    background-color: #722F72;
+    margin: 8px 0px;
+    border: none;
+
+}
+
+#barraUno.active{
+    width: 30px;
+    height: 2px;
+    background-color: #722F72;
+    margin: 8px 0px;
+    border: none;
+    rotate: 45deg;
+
+}
+
+#barraDos{
+    width: 30px;
+    height: 2px;
+    background-color: #722F72;
+    margin: 8px 0px;
+    border: none;
+}
+
+#barraTres{
+    width: 30px;
+    height: 2px;
+    background-color: #722F72;
+    margin: 8px 0px;
+    border: none;
 }
 
 
 
+
+
 /* BANNER */
+#banner{
+    height: 100vh;
+    background-image: url('../assets/Imagen\ principalfinaL.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+#banner h1{
+    color: white;
+    margin-left: 50px;
+}
+.tituloPrincipal{
+    margin-top: 5em;
+/* position: relative;
+left: 0px;
+right: 57.45%;
+bottom: 10em;
+
+font-family: Alata;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 66px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+#imgPrincipal{
+position: absolute;
+left: 0px;
+transform: matrix(1, 0, 0, 1, 0, 0);
+*/} 
+
+
 
 /* SOBRE MI */
+#sobreMi{
+    background-color: #FAFBF3;
+}
+
+#sobreMi h2{
+    color: #8B4F8B;
+}
+
+.rectanguloSobreMi{
+margin: 2em;
+padding: 2em;
+background: rgba(196, 167, 196, 0.5);
+box-shadow: 4px 4px 8px rgba(114, 47, 114, 0.1);
+border-radius: 25px 0px
+}
+
+#sobreMi .imgSobreMi{
+    border-radius: 100%;
+    box-shadow: 4px 3px 8px 2px #8b4f8b3a ;
+}
 
 /* SERVICIOS */
+#servicios{
+    background-color: #C4A7C4;
+}
+
+#servicios h2{
+    color: white;
+}
+
+#servicios .serviciosImg{
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 2px rgba(79, 79, 79, 0.42);
+    margin-bottom: 30px;
+}
+
 
 /* METODOLOGIA */
 #metodologia{
     background-color: #FAFBF3;
-    margin-top: 10em;
-    /* margin-bottom: 10em; */
 }
 
 #metodologia h2{
@@ -154,7 +280,7 @@ nav #navbarSupportedContent ul li .nav-link{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
 }
 
@@ -248,6 +374,12 @@ textarea:focus{
     width: 30%;
     background-color: #AF86AF;
     color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.boton:hover{
+    color: #722F72;
+    
 }
 
 .contenedorInfo{
@@ -286,7 +418,6 @@ textarea:focus{
 }
 
 .contenedorLogo i:hover{
-    font-size: 20px;
     color: #722F72;
 }
 
@@ -337,9 +468,20 @@ textarea:focus{
         width: 45%;
     }
 
+    .rectanguloSobreMi{
+        margin: 0em;
+        padding: 1em;
+    }
+
 }
 /* MEDIA QUERIES MOBILE */
 @media only screen and (max-width: 580px){
+    #banner{
+        height: 100vh;
+        background-image: url('../assets/Imagen\ principalfinaL.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: 0%;
+    }
 
-    
 }
