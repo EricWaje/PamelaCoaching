@@ -226,6 +226,23 @@ border-radius: 25px 0px
     margin-bottom: 30px;
 }
 
+#servicios .cta{
+    border: 2px solid #722F72;
+    border-radius: 25px 0px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: white;
+    background-color: #722F72 ;
+    transition: all 0.2s ease-in-out;
+}
+
+#servicios .cta:hover{
+    background-color: #C4A7C4;
+    color: #722F72;
+}
+
 
 /* METODOLOGIA */
 #metodologia{
