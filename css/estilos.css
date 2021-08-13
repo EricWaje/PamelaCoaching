@@ -199,11 +199,16 @@ transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 .rectanguloSobreMi{
-margin: 2em;
-padding: 2em;
-background: rgba(196, 167, 196, 0.5);
-box-shadow: 4px 4px 8px rgba(114, 47, 114, 0.1);
-border-radius: 25px 0px
+    font-family: 'antipasto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    margin: 2em;
+    padding: 2em;
+    background: rgba(196, 167, 196, 0.5);
+    box-shadow: 4px 4px 8px rgba(114, 47, 114, 0.1);
+    border-radius: 25px 0px
+
 }
 
 #sobreMi .imgSobreMi{
@@ -264,12 +269,17 @@ border-radius: 25px 0px
     font-size: 20px;
     line-height: 40px;
     font-style: italic;
-    padding: 30px 112px;
+    padding: 30px 90px;
 }
 
 .contenedorParrafo{
     line-height: 35px;
-    margin: 0px 40px;
+    margin: 0px 0px;
+}
+
+.contenedorParrafo p{
+    font-size: 16px;
+    padding: 5px 0px;
 }
 
 /* TESTIMONIOS */
@@ -516,6 +526,11 @@ textarea:focus{
 }
 /* MEDIA QUERIES MOBILE */
 @media only screen and (max-width: 580px){
+    #banner h1{
+        margin: 0px;
+        text-align: center;
+        margin-left: 0px;
+    }
     #banner{
         height: 100vh;
         background-image: url('../assets/Imagen\ principalfinaL.jpg');
