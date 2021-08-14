@@ -8,10 +8,6 @@ const email = document.querySelector('.email');
 const telefono = document.querySelector('.telefono');
 const comentarios = document.querySelector('.textArea');
 
-/*   console.log('hola');
-  contenedorUl.style.backgroundColor = 'violet';
-  lista.style.backgroundColor = 'blue'; */
-
 const modificarMenu = () => {
   const uno = document.getElementById('barraUno');
   const dos = document.getElementById('barraDos');
