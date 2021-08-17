@@ -148,7 +148,7 @@ nav .navbar-toggler:focus{
 /* BANNER */
 #banner{
     height: 100vh;
-    background-image: url('../assets/Imagen\ principalfinaL.jpg');
+    background-image: url('../assets/banner.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 90%;
@@ -533,7 +533,7 @@ textarea:focus{
     }
     #banner{
         height: 100vh;
-        background-image: url('../assets/Imagen\ principalfinaL.jpg');
+        background-image: url('../assets/banner.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position-x: 0%;
